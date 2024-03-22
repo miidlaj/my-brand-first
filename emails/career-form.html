@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <style type="text/css">
+      .tables {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      .tcontents {
+        border: 1px solid #afadab;
+        text-align: left;
+        padding: 8px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #c6beb9;
+      }
+    </style>
+  </head>
+  <body style="margin: 0 !important; padding: 0 !important; background: #fff">
+    <!-- Hidden div for email compatibility -->
+    <div
+      style="
+        display: none;
+        font-size: 1px;
+        color: #fefefe;
+        line-height: 1px;
+        max-height: 0px;
+        max-width: 0px;
+        opacity: 0;
+        overflow: hidden;
+      "
+    ></div>
+
+    <!-- Email content -->
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+        <td
+          bgcolor="#ffffff"
+          align="center"
+          style="padding: 10px 15px 30px 15px"
+        >
+          <table
+            border="0"
+            cellpadding="0"
+            cellspacing="0"
+            width="100%"
+            style="max-width: 500px"
+          >
+            <tr>
+              <td>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td>
+                      <table
+                        width="100%"
+                        border="0"
+                        cellspacing="0"
+                        cellpadding="0"
+                        class="table"
+                      >
+                        <tr>
+                          <td
+                            style="
+                              padding: 0 0 0 0;
+                              font-size: 16px;
+                              line-height: 25px;
+                              color: #232323;
+                            "
+                          >
+                            <h4>
+                              {{ name }} shared his details for the {{ title }}
+                              vacancy
+                            </h4>
+                            <div class="form-container">
+                              <!-- Display contact details -->
+
+                              <table>
+                                <tr>
+                                  <th class="tcontents">Detais</th>
+
+                                  <th class="tcontents">
+                                    {{ name }}'s Details
+                                  </th>
+                                </tr>
+                                <tr>
+                                  <td class="tcontents">Name</td>
+                                  <td class="tcontents">{{ name }}</td>
+                                </tr>
+                                <tr>
+                                  <td class="tcontents">job</td>
+                                  <td class="tcontents">{{ title }}</td>
+                                </tr>
+                                <tr>
+                                  <td class="tcontents">Email</td>
+                                  <td class="tcontents">{{ email }}</td>
+                                </tr>
+                                <tr>
+                                  <td class="tcontents">contact number</td>
+                                  <td class="tcontents">{{ number }}</td>
+                                </tr>
+                                <tr>
+                                  <td class="tcontents">Qualification</td>
+                                  <td class="tcontents">{{ qualification }}</td>
+                                </tr>
+                                <tr class="tcontents">
+                                  <td class="tcontents">
+                                    Years Of Experience in {{ title }}
+                                  </td>
+                                  <td class="tcontents">{{ experience }}</td>
+                                </tr>
+                                <tr>
+                                  <td class="tcontents">
+                                    Current Salary (CTC)
+                                  </td>
+                                  <td class="tcontents">{{ salary }}</td>
+                                </tr>
+                                <tr>
+                                  <td class="tcontents">Expected Salary</td>
+                                  <td class="tcontents">{{ package }}</td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
